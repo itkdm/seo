@@ -1,6 +1,7 @@
 ---
-title: 布吉岛出海指南｜从需求验证到增长变现
+title: 布吉岛出海指南：从需求验证到增长变现
 description: 从真实需求出发，学习如何验证方向、上线产品、通过 SEO 与渠道获得用户，并逐步实现变现。
+titleTemplate: false
 layout: home
 hero:
   text: 从一个需求开始，做自己的互联网生意。

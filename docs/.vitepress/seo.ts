@@ -140,5 +140,6 @@ export function createSeoHead({ pageData, siteData, title, description, siteUrl 
   }
 
   head.push(['script', { type: 'application/ld+json' }, JSON.stringify(structuredData)])
+
   return head
 }

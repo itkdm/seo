@@ -7,9 +7,10 @@ export default defineConfig({
   lang: 'zh-CN', title: '布吉岛出海指南',
   description: '从需求挖掘、产品验证到 SEO 与广告增长，陪你一步一步做出自己的出海生意。',
   cleanUrls: true, lastUpdated: true,
+  sitemap: { hostname: siteUrl || 'https://seo.itkdm.com' },
   head: [
     ['meta', { name: 'theme-color', content: '#f7f7f2' }],
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }]
+    ['link', { rel: 'icon', type: 'image/png', sizes: '64x64', href: '/favicon.png' }]
   ],
   transformHead({ pageData, siteData, title, description }) {
     return createSeoHead({ pageData, siteData, title, description, siteUrl })
