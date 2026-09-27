@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "布吉岛出海指南：需求研究、产品构建、SEO 与增长实战",
+  "description": "布吉岛出海增长指南：需求研究、产品构建、SEO 与增长实战",
   "packageManager": "pnpm@10.17.1",
   "engines": {
     "node": ">=20"

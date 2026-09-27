@@ -1,0 +1,16 @@
+# 布吉岛出海增长指南
+
+> 面向独立开发者和小团队，介绍需求发现、产品验证、SEO 与渠道增长和变现。
+
+## 核心页面
+
+- [出海指南首页](https://seo.itkdm.com/): 了解从需求到增长和变现的内容路径。
+- [入门](https://seo.itkdm.com/getting-started/): 了解独立产品实践的起步方法。
+- [找需求](https://seo.itkdm.com/research/find-a-need): 从用户问题发现产品机会。
+- [关键词机会](https://seo.itkdm.com/research/keyword-opportunity): 评估搜索需求与产品方向。
+- [构建 MVP](https://seo.itkdm.com/product/build-an-mvp): 规划并验证最小可行产品。
+- [技术 SEO](https://seo.itkdm.com/seo/technical-seo): 检查网站抓取、索引和技术基础。
+- [增长衡量](https://seo.itkdm.com/growth/measure-growth): 选择指标并评估增长效果。
+- [产品定价](https://seo.itkdm.com/monetization/pricing): 规划产品的定价与收费方式。
+
+页面内容用于经验与方法参考；具体平台政策、搜索产品行为和商业数据请以当前官方资料为准。

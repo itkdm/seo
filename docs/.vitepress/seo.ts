@@ -1,6 +1,7 @@
 import type { HeadConfig, PageData, SiteData } from 'vitepress'
 
-const DEFAULT_SOCIAL_IMAGE = '/social/default-share.png'
+const DEFAULT_SOCIAL_IMAGE = '/social/default-share-v2.jpg'
+const DEFAULT_SOCIAL_IMAGE_ALT = '插画：独立开发者研究需求，并围绕产品和增长开展实践'
 
 type SeoOptions = {
   pageData: PageData
@@ -82,18 +83,22 @@ export function createSeoHead({ pageData, siteData, title, description, siteUrl 
   if (!origin) return head
 
   const canonicalUrl = absoluteUrl(origin, siteData.base, pagePath(pageData.relativePath))
-  const socialImagePath = typeof frontmatter.ogImage === 'string'
+  const pageSpecificImage = typeof frontmatter.ogImage === 'string'
     ? frontmatter.ogImage
-    : DEFAULT_SOCIAL_IMAGE
+    : undefined
+  const socialImagePath = pageSpecificImage || DEFAULT_SOCIAL_IMAGE
   const socialImageUrl = absoluteUrl(origin, siteData.base, socialImagePath)
+  const socialImageAlt = typeof frontmatter.ogImageAlt === 'string'
+    ? frontmatter.ogImageAlt
+    : pageSpecificImage ? title : DEFAULT_SOCIAL_IMAGE_ALT
 
   head.push(
     ['link', { rel: 'canonical', href: canonicalUrl }],
     ['meta', { property: 'og:url', content: canonicalUrl }],
     ['meta', { property: 'og:image', content: socialImageUrl }],
-    ['meta', { property: 'og:image:alt', content: String(frontmatter.ogImageAlt || title) }],
+    ['meta', { property: 'og:image:alt', content: socialImageAlt }],
     ['meta', { name: 'twitter:image', content: socialImageUrl }],
-    ['meta', { name: 'twitter:image:alt', content: String(frontmatter.ogImageAlt || title) }]
+    ['meta', { name: 'twitter:image:alt', content: socialImageAlt }]
   )
 
   if (kind === 'website') {
@@ -128,9 +133,12 @@ export function createSeoHead({ pageData, siteData, title, description, siteUrl 
     name: title,
     description: description || siteData.description,
     url: canonicalUrl,
-    image: socialImageUrl,
     inLanguage: siteData.lang,
     isPartOf: { '@type': 'WebSite', name: siteData.title, url: origin }
+  }
+
+  if (kind !== 'article' || pageSpecificImage) {
+    structuredData.image = socialImageUrl
   }
 
   if (publishedDate) structuredData.datePublished = publishedDate
