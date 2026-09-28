@@ -1,6 +1,7 @@
 ---
 title: 实战案例
 description: 通过真实项目复盘，了解从需求发现到产品增长的实践过程。
+ogImage: /social/categories/cases.jpg
 prev: false
 next: false
 ---

@@ -1,6 +1,7 @@
 ---
 title: 找方向
 description: 了解如何发现真实需求并判断一个产品方向是否值得尝试。
+ogImage: /social/categories/research.jpg
 prev: false
 next: false
 ---

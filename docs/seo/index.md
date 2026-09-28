@@ -1,6 +1,7 @@
 ---
 title: SEO 增长：用搜索内容获得自然流量
 description: 从搜索意图、关键词研究和技术基础入手，为产品建立可持续的自然流量。
+ogImage: /social/categories/seo.jpg
 ---
 # SEO 增长
 

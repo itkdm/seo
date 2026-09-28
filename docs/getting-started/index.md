@@ -1,6 +1,7 @@
 ---
 title: 入门路线
 description: 了解从发现需求到产品增长的出海项目完整路径。
+ogImage: /social/categories/getting-started.jpg
 prev: false
 next: false
 ---

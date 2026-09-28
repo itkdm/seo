@@ -1,6 +1,7 @@
 ---
 title: 工具
 description: 按出海项目各个阶段整理常用工具及其使用场景。
+ogImage: /social/categories/tools.jpg
 prev: false
 next: false
 ---

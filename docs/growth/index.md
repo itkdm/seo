@@ -1,6 +1,7 @@
 ---
 title: 搞流量
 description: 了解如何通过 SEO、内容、社区和广告为产品找到用户。
+ogImage: /social/categories/growth.jpg
 prev: false
 next: false
 ---

@@ -1,0 +1,62 @@
+{
+  "brand": {
+    "zh": "布吉岛出海增长指南"
+  },
+  "pages": [
+    {
+      "source": "docs/getting-started/index.md",
+      "background": "docs/public/social/backgrounds/getting-started.jpg",
+      "output": "/social/categories/getting-started.jpg",
+      "locale": "zh"
+    },
+    {
+      "source": "docs/research/index.md",
+      "background": "docs/public/social/backgrounds/research.jpg",
+      "output": "/social/categories/research.jpg",
+      "locale": "zh"
+    },
+    {
+      "source": "docs/product/index.md",
+      "background": "docs/public/social/backgrounds/product.jpg",
+      "output": "/social/categories/product.jpg",
+      "locale": "zh"
+    },
+    {
+      "source": "docs/seo/index.md",
+      "background": "docs/public/social/backgrounds/seo.jpg",
+      "output": "/social/categories/seo.jpg",
+      "locale": "zh"
+    },
+    {
+      "source": "docs/growth/index.md",
+      "background": "docs/public/social/backgrounds/growth.jpg",
+      "output": "/social/categories/growth.jpg",
+      "locale": "zh"
+    },
+    {
+      "source": "docs/monetization/index.md",
+      "background": "docs/public/social/backgrounds/monetization.jpg",
+      "output": "/social/categories/monetization.jpg",
+      "locale": "zh"
+    },
+    {
+      "source": "docs/cases/index.md",
+      "background": "docs/public/social/backgrounds/cases.jpg",
+      "output": "/social/categories/cases.jpg",
+      "locale": "zh"
+    },
+    {
+      "source": "docs/tools/index.md",
+      "background": "docs/public/social/backgrounds/tools.jpg",
+      "output": "/social/categories/tools.jpg",
+      "locale": "zh"
+    }
+  ],
+  "palette": {
+    "brand": "#45632b",
+    "accent": "#9bbd52",
+    "title": "#29362d",
+    "description": "#596259",
+    "wash": "#fbfcf4"
+  }
+}

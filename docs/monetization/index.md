@@ -1,6 +1,7 @@
 ---
 title: 做变现
 description: 了解如何选择变现方式、表达产品价值并验证用户付费意愿。
+ogImage: /social/categories/monetization.jpg
 prev: false
 next: false
 ---

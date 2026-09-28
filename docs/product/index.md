@@ -1,6 +1,7 @@
 ---
 title: 做产品
 description: 了解如何把经过验证的需求变成可用产品，并尽早获得真实反馈。
+ogImage: /social/categories/product.jpg
 prev: false
 next: false
 ---
