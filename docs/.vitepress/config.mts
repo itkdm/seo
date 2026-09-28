@@ -1,8 +1,15 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig, type HeadConfig } from 'vitepress'
 import { createSeoHead } from './seo'
 
 const siteUrl = process.env.SITE_URL
 const siteOrigin = new URL(siteUrl || 'https://seo.itkdm.com').origin
+const measurementId = process.env.GA_MEASUREMENT_ID
+const analyticsHead: HeadConfig[] = measurementId && /^G-[A-Z0-9]+$/.test(measurementId)
+  ? [
+      ['script', { async: '', src: `https://www.googletagmanager.com/gtag/js?id=${measurementId}` }],
+      ['script', {}, `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${measurementId}');`]
+    ]
+  : []
 
 export default defineConfig({
   lang: 'zh-CN', title: '布吉岛出海增长指南',
@@ -10,6 +17,7 @@ export default defineConfig({
   cleanUrls: true, lastUpdated: true,
   sitemap: { hostname: siteOrigin },
   head: [
+    ...analyticsHead,
     ['meta', { name: 'theme-color', content: '#f7f7f2' }],
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
     ['link', { rel: 'icon', type: 'image/png', sizes: '128x128', href: '/favicon.png' }],
