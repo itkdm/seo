@@ -37,7 +37,8 @@
 
 - 先读 [CONTENT_GUIDE.md](./CONTENT_GUIDE.md)。所有公开页面必填 `title` 和 `description`。
 - `keywords` 不进入 frontmatter SEO 模板，也不生成 `<meta name="keywords">`。用户的搜索词研究属于选题规划，不能将 meta keywords 与关键词研究混为一谈。
-- 全站默认分享图为 `docs/public/social/default-share.png`。`ogImage` 仅作为个别页面的覆盖项，不要求每篇文章准备图片。
+- 全站默认分享图为 `docs/public/social/default-share.jpg`。`ogImage` 仅作为个别页面的覆盖项，不要求每篇文章准备图片。
+- SVG favicon 同时提供 128 × 128 PNG fallback；PNG favicon 用于搜索结果兼容性。
 - `date` 只在发布日期明确且页面同步展示时填写；`lastUpdated` 默认由 VitePress 的 Git 时间提供，不要手动重复维护。
 - `author`、`noindex` 按需填写。除非用户明确要求，不要给现有页面编造日期、作者或索引状态。
 - SEO head 生成逻辑位于 `docs/.vitepress/seo.ts`。保持 canonical、Open Graph、Twitter Card、robots 与结构化数据由此集中生成，不要在页面 frontmatter 手写重复的 head 标签。

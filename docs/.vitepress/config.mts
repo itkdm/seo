@@ -11,14 +11,15 @@ export default defineConfig({
   sitemap: { hostname: siteOrigin },
   head: [
     ['meta', { name: 'theme-color', content: '#f7f7f2' }],
-    ['link', { rel: 'icon', type: 'image/png', sizes: '64x64', href: '/favicon.png' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '128x128', href: '/favicon.png' }],
     ['link', { rel: 'describedby', href: '/llms.txt' }]
   ],
   transformHead({ pageData, siteData, title, description }) {
     return createSeoHead({ pageData, siteData, title, description, siteUrl })
   },
   themeConfig: {
-    logo: '/favicon.svg', siteTitle: '布吉岛出海增长指南',
+    logo: { src: '/favicon.svg', alt: '布吉岛出海增长指南标志' }, siteTitle: '布吉岛出海增长指南',
     nav: [
       { text: '入门', link: '/getting-started/' },
       { text: '找方向', link: '/research/' },

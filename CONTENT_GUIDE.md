@@ -13,7 +13,7 @@
 
 - `date`：首次发布日期，格式为 `YYYY-MM-DD`。仅在日期明确且页面显示发布日期时填写。
 - `author`：作者与全站默认作者不同时填写。
-- `ogImage`：需要为单页定制社交分享图时填写。未填写时使用 `docs/public/social/default-share-v2.jpg`（1200 × 630）。默认图不嵌入页面标题，分享标题和摘要由页面元数据提供。
+- `ogImage`：需要为单页定制社交分享图时填写。未填写时使用 `docs/public/social/default-share.jpg`（1200 × 630）。默认图不嵌入页面标题，分享标题和摘要由页面元数据提供。
 - `ogImageAlt`：仅在填写了 `ogImage` 且图片含义无法由页面标题表达时填写。
 - `noindex: true`：页面需要发布但不希望进入搜索索引时填写；默认不输出 robots 指令。
 - `lastUpdated`：通常不手动填写。VitePress 的 `lastUpdated: true` 使用文件最近一次 Git 提交时间；只有需要人工覆盖时才填写。

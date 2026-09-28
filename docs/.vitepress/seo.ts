@@ -1,6 +1,6 @@
 import type { HeadConfig, PageData, SiteData } from 'vitepress'
 
-const DEFAULT_SOCIAL_IMAGE = '/social/default-share-v2.jpg'
+const DEFAULT_SOCIAL_IMAGE = '/social/default-share.jpg'
 const DEFAULT_SOCIAL_IMAGE_ALT = '插画：独立开发者研究需求，并围绕产品和增长开展实践'
 
 type SeoOptions = {
